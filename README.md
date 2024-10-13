@@ -1,4 +1,4 @@
-Claro! Aqui está a versão atualizada do `README.md`, incluindo explicações sobre a configuração da sessão e a conexão com o banco de dados MySQL:
+Claro! Aqui está a versão atualizada do `README.md`, incluindo a recomendação para acessar a aplicação diretamente pelo `site.html` no navegador:
 
 ```markdown
 # Projeto OneLife Advogados
@@ -84,7 +84,7 @@ Para instalar as dependências do projeto e executar o servidor Node.js, siga os
    node server.js
    ```
 
-4. Acesse a aplicação em seu navegador em `http://localhost:3000`.
+4. Acesse a aplicação em seu navegador em `http://localhost:3000/site.html`.
 
 ## Dependências
 
@@ -112,7 +112,7 @@ As seguintes dependências são necessárias para o funcionamento do projeto:
 
 Antes de iniciar o projeto, você deve garantir que o seu servidor MySQL esteja configurado corretamente. As credenciais de conexão estão definidas no código do servidor. Modifique as opções abaixo conforme necessário:
 
-```javascript
+```NODE-js
 const dbOptions = {
     host: 'localhost',
     user: 'root',
@@ -125,7 +125,7 @@ const dbOptions = {
 
 Para gerenciar sessões de usuário, a seguinte configuração é utilizada:
 
-```javascript
+```Node-Js
 app.use(session({
     secret: '0488', // Segredo utilizado para assinar o cookie da sessão
     resave: false, // Não re-salvar a sessão se não houver alterações
@@ -142,4 +142,5 @@ app.use(session({
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*.
+```
 
