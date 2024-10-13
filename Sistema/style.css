@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(beautiful-urban-view.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.img_login_register {
+  border-radius: 100%; 
+  width: 150px; 
+  height: 150px; 
+  background-image: url(user.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 12%;
+  left: 50%; 
+  transform: translateX(-50%) scale(1.2);
+  z-index: 1;
+}
+
+
+.container {
+  background-color: #f9f9f9; 
+  padding: 20px;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; 
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.form-container {
+  display: block;
+}
+
+.form-container.active {
+  display: inline-block;
+}
+
+form {
+  position: absolute;
+  margin-top: 110px;
+  transition: .3s;
+  width: 300px;
+  height: 300px;
+}
+
+.title {
+  margin-top: 60px;
+  align-items: center;
+  text-align: center;
+  color: #003366; 
+}
+
+.buttonsForm {
+  margin-top: 80px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 7px 0 #003366; 
+}
+
+.buttonsForm button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 10px 29px;
+}
+
+.btnColor {
+  position: absolute;
+  width: 92px;
+  height: 100%;
+  background: linear-gradient(to right, #003366, #004080); 
+  border-radius: 10px;
+  transition: .4s;
+}
+
+input[type="text"], input[type="password"], input[type ='phone'] {
+  box-shadow: 10px 0 20px 0 #333333; 
+  border: 3px solid #003366; 
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 8px 0 8px 35px;
+  outline: none;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background: #003366; 
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  font-size: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #002244; 
+  color: #fcfcfc;
+  transition:  0.5s;
+  text-align: center;
+  
+}
+
+#signin {
+  left: 25px;
+}
+
+#signup {
+  left: 450px;
+}
+/* Responsivo para smartphones pequenos e médios */
+@media (min-width: 200px) and (max-width: 389px) {
+  .img_login_register {
+    width: 100px;
+    height: 100px;
+    top: 7%; 
+    transform: translateX(-50%) scale(2); 
+  }
+}
+
+/* Responsivo para smartphones maiores e tablets pequenos */
+@media (min-width: 390px) and (max-width: 768px) {
+  .img_login_register {
+    width: 120px; 
+    height: 120px;
+    top: 5%;
+    transform: translateX(-50%) scale(1.5); 
+    padding: 66px;
+  }
+}
+
+/* Responsivo para tablets médios e grandes */
+@media (min-width: 769px) and (max-width: 992px) {
+  .img_login_register {
+    width: 140px;
+    height: 140px;
+    top: 4%;
+    transform: translateX(-50%) scale(1.3); 
+    padding: 75px
+  }
+}
+
+/* Responsivo para desktops menores e tablets grandes */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .img_login_register {
+    width: 150px; 
+    height: 150px;
+    top: 5%;
+    transform: translateX(-50%) scale(1.4);
+    padding: 75px;
+  }
+}
+
+
+

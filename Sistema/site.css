@@ -1,0 +1,130 @@
+/*
+Dourado - #b89867
+Cinza - #343031
+Preto - #000000 */
+
+head{
+    background-color: #343031;
+}
+
+h2{
+    color: #b89867;
+}
+
+.navbar-brand{
+    color: #b89867;
+}
+
+.nav-link{
+    color: #b89867;
+}
+
+.container-fluid{
+    outline:solid 1px   ;
+    outline-color: #b89867;
+}
+
+body{
+    margin-left: 15px;
+    margin-right: 15px;
+} 
+
+h3{
+    color: #b89867;
+}
+
+ul{ 
+    width: 1500px;
+    list-style-type: none;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+footer{
+    margin-top: 0px;
+}
+
+.btnContato{
+    color: #b89867;
+    border-radius: 1px;
+}
+
+.imgLogo{
+    width: 150px;
+    height: 84px;
+    background-size: 30% ;
+}
+
+.imgAtuação{
+    width: 355px;
+    height: 220px; 
+    float: right;
+}
+
+.imgEquipe{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+    margin-bottom: 100px;
+    width: 600px;
+    height: 337px; 
+    float: right;
+    /* style="width: 1300px ; height: 600px */
+}
+.imgSobre{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 355px;
+    height: 220px; 
+    float: right;
+    
+}
+
+.imgFale{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgEscritorio{
+    display: block;
+    width: 700px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
+.imgEscritorio2{
+    display: block;
+    width: 700px;
+    height: 450px;
+    
+    float: right;
+}
+
+.card{
+    border-color: #b89867;
+}
+
+.card-header{
+    border-color: #b89867;
+    color: #b89867;
+}
+
+.card-body{
+    border-color: #b89867;
+}
+
+.textEscri{
+    align-content: center;
+}
+
+.area{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

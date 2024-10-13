@@ -1,0 +1,160 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* Cor de fundo mais suave */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para centralizar verticalmente */
+}
+
+form {
+    max-width: 600px;
+    width: 90%; /* Para permitir um melhor ajuste em dispositivos menores */
+    padding: 20px;
+    background: #ffffff; /* Fundo branco */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    transition: transform 0.3s; /* Transição suave ao passar o mouse */
+}
+
+form:hover {
+    transform: scale(1.02); /* Leve aumento ao passar o mouse */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #343a40; /* Cor do título */
+    text-align: center; /* Centraliza o título */
+    font-size: 1.5rem; /* Tamanho responsivo do título */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #495057; /* Cor do texto */
+    font-size: 1rem; /* Tamanho responsivo do texto */
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px; /* Margem reduzida para menor espaçamento */
+    border-radius: 4px;
+    border: 1px solid #ced4da; /* Cor de borda mais clara */
+    transition: border-color 0.3s; /* Transição suave ao focar */
+    font-size: 1rem; /* Tamanho responsivo da fonte */
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #80bdff; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Cor do botão */
+    color: #fff;
+    font-size: 1rem; /* Tamanho responsivo do botão */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave */
+    display: block; /* Faz o botão ocupar toda a largura do formulário */
+    width: 100%; /* Botão ocupa toda a largura do formulário */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1000px) {
+    form {
+        padding: 15px; /* Menos padding em telas menores */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Tamanho do título em telas pequenas */
+    }
+
+    button {
+        font-size: 0.9rem; /* Tamanho menor do botão em telas pequenas */
+    }
+
+    input, select, textarea {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte para campos de entrada */
+    }
+    .container {
+       
+        height: 86vh; /* Para centralizar verticalmente */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem; /* Ajusta o título para telas muito pequenas */
+    }
+
+    button {
+        font-size: 0.8rem; /* Ajusta o botão para telas muito pequenas */
+    }
+
+    input, select, textarea {
+        padding: 8px; /* Menos padding nos campos */
+        font-size: 0.8rem; /* Ajusta a fonte para campos */
+    }
+
+    label {
+        font-size: 0.8rem; /* Ajusta o tamanho do texto do label */
+        
+    }
+    .container {
+       
+        height: 86vh /* Para centralizar verticalmente */
+    }
+}
+
+/* Abas e conteúdo */
+.tab-container {
+    margin: 20px 0;
+}
+
+.tab-link {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f8f9fa; /* Cor do fundo das abas */
+    color: #343a40; /* Cor do texto das abas */
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.tab-link.active {
+    background-color: #007bff; /* Cor da aba ativa */
+    color: #fff; /* Cor do texto da aba ativa */
+}
+
+.tab-link:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+.tab-content {
+    background-color: #ffffff; /* Fundo branco para conteúdo */
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para o conteúdo */
+}
+
+#logout-btn {
+    background-color: #dc3545; /* Cor do botão de logout */
+}
+
+#logout-btn:hover {
+    background-color: #c82333; /* Cor ao passar o mouse no botão de logout */
+}

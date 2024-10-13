@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adicionado para responsividade -->
+    <title>Formulário de Chamado</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <h1>Formulário de Chamado</h1>
+    <div class="container"> <!-- Contêiner para centralização -->
+        <form id="chamado-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required><br>
+
+            <label for="ramo">Ramo:</label>
+            <select id="ramo" name="ramo" required>
+                <option value="" disabled selected>Selecione um ramo</option>
+                <option value="Direito Penal">Direito Penal</option>
+                <option value="Direito Civil">Direito Civil</option>
+                <option value="Direito Tributário">Direito Tributário</option>
+                <option value="Direito Internacional">Direito Internacional</option>
+            </select><br>
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" required></textarea><br>
+
+            <button type="submit">Enviar Chamado</button>
+        </form>
+    </div>
+
+    <script src="formulario.js"></script>
+</body>
+</html>

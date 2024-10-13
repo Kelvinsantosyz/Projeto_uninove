@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamados - OneLife Advogados</title>
+    <link rel="stylesheet" href="chamados.css"> 
+</head>
+<body>
+    <header>
+        <h1>Meus Chamados</h1>
+        <button id="logout-btn">Logout</button>
+        <div id="user-info">Bem-vindo, <span id="user-name"></span></div>
+    </header>
+
+    <div class="tab-container">
+        <button class="tab-link active" onclick="openTab(event, 'abertos')">Chamados Abertos</button>
+        <button class="tab-link" onclick="openTab(event, 'solucionados')">Chamados Solucionados</button>
+    </div>
+
+    <section id="abertos" class="tab-content active">
+        <article id="chamados-list"></article>
+    </section>
+
+    <section id="solucionados" class="tab-content">
+        <article id="chamados-list-solucionados"></article>
+    </section>
+
+    <script src="chamados.js"></script>
+</body>
+</html>
