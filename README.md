@@ -68,7 +68,7 @@ Para instalar as dependências do projeto e executar o servidor Node.js, siga os
 1. Clone o repositório:
 
    ```bash
-   gh repo clone Kelvinsantosyz/Projeto
+   gh repo clone Kelvinsantosyz/Projeto_uninove
    cd Projeto
    ```
 
