@@ -1,4 +1,4 @@
-Entendi! Vamos adicionar um passo detalhado para instalar as dependências diretamente do `package.json` na seção de instalação do `README.md`. Aqui está a versão atualizada:
+
 
 ```markdown
 # Projeto OneLife Advogados
