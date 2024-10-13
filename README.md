@@ -143,12 +143,3 @@ app.use(session({
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*.
 
-## Licença
-
-Este projeto é licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
-```
-
-### Alterações
-- Adicionadas seções para **Configuração do Servidor MySQL** e **Configuração da Sessão**, explicando como configurar o servidor MySQL e o middleware de sessão no Express.
-
-Se precisar de mais ajustes ou informações adicionais, é só avisar!
