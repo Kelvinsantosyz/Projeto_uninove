@@ -1,4 +1,4 @@
-Claro! Aqui está a versão atualizada do `README.md`, incluindo a recomendação para acessar a aplicação diretamente pelo `site.html` no navegador:
+Entendi! Vamos adicionar um passo detalhado para instalar as dependências diretamente do `package.json` na seção de instalação do `README.md`. Aqui está a versão atualizada:
 
 ```markdown
 # Projeto OneLife Advogados
@@ -72,7 +72,13 @@ Para instalar as dependências do projeto e executar o servidor Node.js, siga os
    cd Projeto
    ```
 
-2. Instale as dependências do projeto:
+2. Instale as dependências do projeto a partir do `package.json`:
+
+   ```bash
+   npm install bcrypt bcryptjs body-parser bootbox bootstrap cors csurf express express-session express-validator mysql2
+   ```
+
+   Ou, se você já tem um arquivo `package.json` com as dependências listadas, você pode simplesmente usar:
 
    ```bash
    npm install
@@ -112,7 +118,7 @@ As seguintes dependências são necessárias para o funcionamento do projeto:
 
 Antes de iniciar o projeto, você deve garantir que o seu servidor MySQL esteja configurado corretamente. As credenciais de conexão estão definidas no código do servidor. Modifique as opções abaixo conforme necessário:
 
-```NODE-js
+```javascript
 const dbOptions = {
     host: 'localhost',
     user: 'root',
@@ -125,7 +131,7 @@ const dbOptions = {
 
 Para gerenciar sessões de usuário, a seguinte configuração é utilizada:
 
-```Node-Js
+```javascript
 app.use(session({
     secret: '0488', // Segredo utilizado para assinar o cookie da sessão
     resave: false, // Não re-salvar a sessão se não houver alterações
