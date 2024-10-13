@@ -1,5 +1,3 @@
-
-
 ```markdown
 # Projeto OneLife Advogados
 
