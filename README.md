@@ -1,13 +1,14 @@
-```markdown
+Para tornar o seu README mais atraente e legível, removendo os asteriscos duplos que causam formatação de negrito e mantendo o conteúdo de forma clara e organizada, você pode usar uma formatação mais simples, mas ainda assim legível. Veja a versão revisada abaixo:
+ markdown
 # Projeto OneLife Advogados
 
-Este projeto é uma aplicação web para a OneLife Advogados, focada em maximizar a captação de clientes e divulgar os serviços oferecidos. O site inclui funcionalidades para facilitar a interação com clientes, como formulários de contato e agendamento de consultas.
+Este projeto é uma aplicação web desenvolvida para a **OneLife Advogados**, com o objetivo de maximizar a captação de clientes e divulgar os serviços oferecidos pelo escritório. A plataforma oferece funcionalidades para facilitar a interação com clientes, como formulários de contato, agendamento de consultas e gerenciamento de chamados.
 
 ## Colaboradores
 
-- **Kelvin Felipe dos Santos** - R.A: 923200158
-- **Miguel Benites de Almeida** - R.A: 923209649
-- **Thiago Rocha Santana** - R.A: 923204332
+- Kelvin Felipe dos Santos - R.A: 923200158
+- Miguel Benites de Almeida - R.A: 923209649
+- Thiago Rocha Santana - R.A: 923204332
 
 ## Funcionalidades
 
@@ -19,10 +20,10 @@ Este projeto é uma aplicação web para a OneLife Advogados, focada em maximiza
 
 ## Tecnologias Utilizadas
 
-- **Frontend**: HTML, CSS, JavaScript, Bootstrap
-- **Backend**: Node.js, Express
-- **Banco de Dados**: MySQL
-- **Autenticação**: bcrypt, express-session
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap.
+- **Backend**: Node.js, Express.
+- **Banco de Dados**: MySQL.
+- **Autenticação e Segurança**: bcrypt, express-session.
 
 ## Estrutura do Banco de Dados
 
@@ -61,34 +62,38 @@ CREATE TABLE usuarios (
 
 ## Instalação
 
-Para instalar as dependências do projeto e executar o servidor Node.js, siga os passos abaixo:
+### Passo 1: Clonando o Repositório
 
-1. Clone o repositório:
+Clone o repositório para sua máquina local:
 
-   ```bash
-   gh repo clone Kelvinsantosyz/Projeto_uninove
-   cd Projeto
-   ```
+```bash
+gh repo clone Kelvinsantosyz/Projeto_uninove
+cd Projeto
+```
 
-2. Instale as dependências do projeto a partir do `package.json`:
+### Passo 2: Instalando as Dependências
 
-   ```bash
-   npm install bcrypt bcryptjs body-parser bootbox bootstrap cors csurf express express-session express-validator mysql2
-   ```
+Instale as dependências do projeto a partir do `package.json`:
 
-   Ou, se você já tem um arquivo `package.json` com as dependências listadas, você pode simplesmente usar:
+```bash
+npm install bcrypt bcryptjs body-parser bootbox bootstrap cors csurf express express-session express-validator mysql2
+```
 
-   ```bash
-   npm install
-   ```
+Ou, se você já tem um arquivo `package.json` com as dependências listadas, use o comando:
 
-3. Inicie o servidor:
+```bash
+npm install
+```
 
-   ```bash
-   node server.js
-   ```
+### Passo 3: Iniciando o Servidor
 
-4. Acesse a aplicação em seu navegador em `http://localhost:3000/site.html`.
+Inicie o servidor Node.js:
+
+```bash
+node server.js
+```
+
+Agora, você pode acessar a aplicação em seu navegador em [http://localhost:3000/site.html](http://localhost:3000/site.html).
 
 ## Dependências
 
@@ -114,37 +119,55 @@ As seguintes dependências são necessárias para o funcionamento do projeto:
 
 ## Configuração do Servidor MySQL
 
-Antes de iniciar o projeto, você deve garantir que o seu servidor MySQL esteja configurado corretamente. As credenciais de conexão estão definidas no código do servidor. Modifique as opções abaixo conforme necessário:
+Antes de iniciar o projeto, garanta que o seu servidor MySQL esteja configurado corretamente. As credenciais de conexão estão definidas no código do servidor. Modifique as opções abaixo conforme necessário:
 
 ```javascript
 const dbOptions = {
     host: 'localhost',
     user: 'root',
-    password: '30561414', // Altere para sua senha do MySQL
-    database: 'cadastro_db' // O nome do banco de dados que você criou
+    password: 'sua-senha', // Altere para sua senha do MySQL
+    database: 'cadastro_db' // Nome do banco de dados a ser utilizado
 };
 ```
 
 ## Configuração da Sessão
 
-Para gerenciar sessões de usuário, a seguinte configuração é utilizada:
+A aplicação utiliza o pacote **express-session** para gerenciar sessões de usuário. Abaixo está a configuração padrão utilizada para sessões:
 
 ```javascript
 app.use(session({
     secret: '0488', // Segredo utilizado para assinar o cookie da sessão
-    resave: false, // Não re-salvar a sessão se não houver alterações
+    resave: false,   // Não re-salvar a sessão se não houver alterações
     saveUninitialized: false, // Não salvar sessões não inicializadas
-    cookie: { secure: false } // Para produção, considere definir como true e usar HTTPS
+    cookie: { secure: false } // Para produção, defina como true e utilize HTTPS
 }));
 ```
 
-- **secret**: Um valor que é utilizado para assinar a sessão. Este valor deve ser mantido em segredo.
-- **resave**: Se `false`, a sessão só será re-salva no armazenamento se houve alguma modificação. 
+### Explicação das Opções de Sessão
+
+- **secret**: Valor utilizado para assinar a sessão. Deve ser mantido em segredo.
+- **resave**: Se `false`, a sessão só será re-salva se houver alterações.
 - **saveUninitialized**: Se `false`, não armazena sessões não inicializadas no armazenamento.
-- **cookie.secure**: Se `true`, o cookie só será enviado em conexões HTTPS. Em ambiente de desenvolvimento, você pode definir como `false`, mas em produção, é recomendado usar HTTPS.
+- **cookie.secure**: Se `true`, o cookie só será enviado em conexões HTTPS. Em ambiente de desenvolvimento, pode ser definido como `false`.
 
 ## Contribuição
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*.
+Contribuições são bem-vindas! Caso você tenha sugestões de melhorias ou queira corrigir algum erro, sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**.
+
+### Como Contribuir
+
+1. Faça um fork deste repositório.
+2. Crie uma branch para a sua alteração (`git checkout -b minha-alteracao`).
+3. Faça o commit das suas alterações (`git commit -am 'Adicionando nova funcionalidade'`).
+4. Envie para o repositório remoto (`git push origin minha-alteracao`).
+5. Crie uma nova pull request.
+
+## Licença
+
+Este projeto é licenciado sob a [MIT License](LICENSE).
+
+---
+
+Agradecemos pela sua visita ao nosso projeto! 🎉
 ```
 
