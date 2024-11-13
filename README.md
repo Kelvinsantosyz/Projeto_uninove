@@ -1,4 +1,3 @@
- markdown
 # Projeto OneLife Advogados
 
 Este projeto é uma aplicação web desenvolvida para a **OneLife Advogados**, com o objetivo de maximizar a captação de clientes e divulgar os serviços oferecidos pelo escritório. A plataforma oferece funcionalidades para facilitar a interação com clientes, como formulários de contato, agendamento de consultas e gerenciamento de chamados.
