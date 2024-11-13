@@ -1,4 +1,3 @@
-Para tornar o seu README mais atraente e legível, removendo os asteriscos duplos que causam formatação de negrito e mantendo o conteúdo de forma clara e organizada, você pode usar uma formatação mais simples, mas ainda assim legível. Veja a versão revisada abaixo:
  markdown
 # Projeto OneLife Advogados
 
